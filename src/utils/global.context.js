@@ -1,5 +1,4 @@
 import { createContext, useReducer } from "react"
-import { dentistEndpoint } from "./endpoints"
 
 export const initialState = { theme: "light", data: [], individualData: {} }
 

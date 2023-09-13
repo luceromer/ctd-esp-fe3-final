@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { removeIndividualInStorage, setInfoInStorage } from "../utils/localStorageHandler"
 
-const Card = ({ name, username, id, pageName, setIsFavRemoved }) => {
+const Card = ({ name, username, id, pageName }) => {
   const linkTo = `/dentist/${id}`
   const [isCardAddedToFavorites, setIsCardAddedToFavorites] = useState(false)
 
