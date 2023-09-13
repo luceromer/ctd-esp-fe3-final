@@ -1,15 +1,18 @@
-
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-
+import { Outlet } from "react-router-dom"
+import Footer from "./Components/Footer"
+import Navbar from "./Components/Navbar"
+import { ContextProvider } from "./utils/global.context"
 
 function App() {
   return (
+    <ContextProvider>
       <div className="App">
-          <Navbar/>
-          <Footer/>
+        <Navbar />
+        <Outlet />
+        <Footer />
       </div>
-  );
+    </ContextProvider>
+  )
 }
 
-export default App;
+export default App
