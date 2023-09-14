@@ -11,13 +11,13 @@ const Home = () => {
   useEffect(() => {
     getInfoFromApi().then((response) => getAllData(response))
   }, [])
-
+  console.log(data)
   return (
     <main className={theme}>
       <h1>Home</h1>
       <div className="card-grid">
-        {data.map(({ name, username, id }) => (
-          <Card name={name} username={username} id={id} key={id} />
+        {data.map((individualData) => (
+          <Card individualData={individualData} pageName="home" />
         ))}
       </div>
     </main>

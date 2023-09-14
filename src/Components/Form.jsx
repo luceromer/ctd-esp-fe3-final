@@ -19,7 +19,7 @@ const Form = () => {
   }
 
   return (
-    <div>
+    <>
       {!isFormSentSuccessfully && (
         <form action="submit">
           {!isValidatedFields && <div className="validation">Por favor verifique su información nuevamente.</div>}
@@ -40,7 +40,7 @@ const Form = () => {
             value={formInputs.email}
             onChange={(e) => setFormInputs({ ...formInputs, email: e.target.value })}
           />
-          <button className="submit" onClick={handleSubmitForm} type="submit">
+          <button className="favButton" onClick={handleSubmitForm} type="submit">
             Enviar
           </button>
         </form>
@@ -48,7 +48,7 @@ const Form = () => {
       {isFormSentSuccessfully && (
         <div className="form-successfull">Gracias {formInputs.name}, te contactaremos cuando antes vía mail. </div>
       )}
-    </div>
+    </>
   )
 }
 

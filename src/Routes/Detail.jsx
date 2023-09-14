@@ -19,8 +19,8 @@ const Detail = () => {
 
   return (
     <div className={theme}>
-      <h1>Detail Dentist id </h1>
-      <Card name={individualData.name} username={individualData.username} id={individualData.id} />
+      <h1>Detail Dentist id: {id} </h1>
+      <Card individualData={individualData} pageName="detail" />
     </div>
   )
 }
