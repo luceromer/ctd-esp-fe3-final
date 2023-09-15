@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react"
-import Card from "../Components/Card"
 import { ContextGlobal } from "../utils/global.context"
 import { getInfoFromStorage, removeIndividualInStorage, removeInfoInStorage } from "../utils/localStorageHandler"
 
